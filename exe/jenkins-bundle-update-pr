@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'jenkins/bundle/update/pr'
+
+Jenkins::Bundle::Update::Pr.create_if_needed(git_username: ARGV.shift, git_email: ARGV.shift)
